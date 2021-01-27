@@ -1,4 +1,4 @@
 # android_studio_apprentissage
-Aprentissage à Android Studio
-
-<p>Apprendre Android Studio</p>
+<h1>Apprendre Android Studio</h1>
+<h4>Initialisation</h4>
+<h4>Initialisation d'un projet android studio avec hello au lieu de Hello World!</h4>
