@@ -1,52 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/firstRelLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtName"
-            android:text="Nom"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtLastName"
-            android:text="Prénom"
-            android:layout_toRightOf="@id/txtName"
-            android:layout_marginLeft="30dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtEmail"
-            android:text="Adresse Mail"
-            android:layout_toRightOf="@id/txtLastName"
-            android:layout_marginLeft="30dp"/>
-    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Guys"
-        android:layout_below="@+id/firstRelLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:id="@+id/txtHello"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Say Hello"
-        android:layout_below="@id/txtHello"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"/>
-
-
-</RelativeLayout>
+        android:text="Hi everyone"
+        android:id="@+id/txtHello"
+        android:background="@color/green"
+        android:layout_weight="20"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nom"
+    android:id="@+id/txtName"
+    android:background="@color/light_blue"
+    android:layout_weight="80"/>
+</LinearLayout>
