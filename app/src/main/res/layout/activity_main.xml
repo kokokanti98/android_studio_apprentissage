@@ -19,4 +19,6 @@
 <!--
 NB:
 -les images à importer se trouveront dans /src/main/res/drawable/nom.jpg(ou png,xml...)
+-on peut ajouter des images dans draable en lick droit dessus sur le répertoire drawable
+de projet de solution->new->image asset
 -->
