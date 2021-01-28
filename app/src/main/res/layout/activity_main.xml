@@ -22,3 +22,13 @@
     android:background="@color/light_blue"
     android:layout_weight="80"/>
 </LinearLayout>
+<!--
+NB:
+-Pour le Linear Layout les design entrée dedans peuvent se mettre
+en orientation horizontale ou verticale selon le choix
+-Les couleur sont en héxadécimale et
+sont déclaré dans le fichier /src/main/res/values/color.xml
+-Le layout weight des design sont calculé automatiquement
+en pourcentage selon le nombre de design dans le Linear Layout
+EX: ici c'est 20+80=100 mais on peut aussi mettre 2+8=10
+-->
