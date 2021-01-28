@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MonApp</string>
+    <string name="app_name">List View et Spinner</string>s
+    <string-array name="humours">
+        <item>Heureux</item>
+        <item>Malheureux</item>
+        <item>En vie de manger</item>
+        <item>Endormi</item>
+    </string-array>
 </resources>

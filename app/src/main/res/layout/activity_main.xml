@@ -6,11 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <TextView
+   <Spinner
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_centerInParent="true"
-       android:text="HELLOW WORLD"/>
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"
+       android:id="@+id/studentSpinner"
+       android:layout_below="@id/humourSpinner"
+       />
+   <Spinner
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:id="@+id/humourSpinner"
+       android:entries="@array/humours"
+       android:layout_centerHorizontal="true"/>
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="100dp"
+       android:id="@+id/citiesList"
+       android:layout_below="@id/studentSpinner"/>
 
 
 </RelativeLayout>
+<!--
+NB: On peut mettre des arrayList de string dans le fichier
+/src/main/res/value/string.xml au lieu de déclarer dans le fichier java
+dans ce cas l'array string est appelé dans ici dans ce fichier par android:entries
+-->
