@@ -9,7 +9,7 @@
 <ImageView
     android:layout_width="wrap_content"
     android:layout_height="150dp"
-    android:src="@drawable/ic_launcher_background"
+    android:src="@drawable/kira"
     android:id="@+id/myImage"
     android:layout_centerInParent="true"/>
 
@@ -20,5 +20,7 @@
 NB:
 -les images à importer se trouveront dans /src/main/res/drawable/nom.jpg(ou png,xml...)
 -on peut ajouter des images dans draable en lick droit dessus sur le répertoire drawable
-de projet de solution->new->image asset
+de projet de solution->new->image asset ou tout simplement copi-coller dans le répertoire choisi
+-/src/main/res/Drawable->pour les images qu on veut utiliser dans l'appli
+-/src/main/res/minimap c'est pour les images qu'on veut faire sur notre icon.
 -->
