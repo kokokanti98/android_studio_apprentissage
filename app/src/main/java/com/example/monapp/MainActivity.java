@@ -3,6 +3,7 @@ package com.example.monapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -39,12 +40,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void ShowSnackbar(){
         Snackbar.make(parent,"Ceci est un Snackbar",Snackbar.LENGTH_SHORT)
+                //Action a déclencher qu'on on clique sur Réessayez afficher Réeesayez cliqué
                 .setAction("Réessayez", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Toast.makeText(MainActivity.this,"Réessayez cliqué",Toast.LENGTH_SHORT).show();
                     }
                 })
+                //colore en rouge le message clicquable réeesayez
+                .setActionTextColor(Color.RED)
+                //colore en jaune le texte messaage 'Ceci est un snackbar'
+                .setTextColor(Color.YELLOW)
                 .show();
     }
 }
