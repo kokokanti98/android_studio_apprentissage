@@ -6,19 +6,16 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.snackbar.Snackbar;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ConstraintLayout parent;
     private Button BtnshowSnackBar;
+    private MaterialCardView CardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +25,17 @@ public class MainActivity extends AppCompatActivity {
         //Selection
         BtnshowSnackBar = findViewById(R.id.btnshowsnackbar);
         parent = findViewById(R.id.parent);
+        CardView = findViewById(R.id.Cardview);
 
-        //button onclick event
+        //button onclick event du Cardview
+        CardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"La CardView a été Cliqué",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //button onclick event du boutton
         BtnshowSnackBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
